@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'pattern': "url('../public/images/pattern.webp')", // Ajusta la ruta
+        'pattern': "url('../public/images/pattern.webp')",
       },
       colors: {
         'my-custom-color': '#f00',
@@ -17,6 +17,5 @@ export default {
     },
   },
   plugins: [
-    // Add any custom plugins here
   ],
 }
