@@ -7,16 +7,13 @@ export default {
     extend: {
       backgroundImage: {
         'pattern': "url('../public/images/pattern.webp')", // Ajusta la ruta
-      },
-      colors: {
-        'my-custom-color': '#f00',
-      },
-      spacing: {
-        'custom-spacing': '10rem',
-      },
+        'logo': "url('../public/logo.webp')", // Ajusta la ruta
+      }
     },
   },
   plugins: [
-    // Add any custom plugins here
+    
+    require('@tailwindcss/typography'),
+    // ...
   ],
 }

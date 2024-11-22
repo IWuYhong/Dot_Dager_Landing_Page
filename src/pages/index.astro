@@ -1,23 +1,18 @@
 ---
+import Layout from "../layouts/Layout.astro";
+
+
 import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Mid from "../components/Mid.astro"
 ---
 
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Gustador de Pepinos - Guiño Guiño"
-    />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/xml" href="../public/favicon.svg" />
-    <title>Landing Page - Dot Dager</title>
-  </head>
+<Layout title="Landing Page - Dot Dager">
   <body class="bg-pattern bg-transparent">
     <main>
       <Navbar />
-      
+      <Mid />
+      <Hero />
     </main>
   </body>
-</html>
-<style is:global></style>
+</Layout>

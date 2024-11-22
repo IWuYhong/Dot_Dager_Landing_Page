@@ -1,0 +1,19 @@
+---
+import Slide from "../components/Slider";
+---
+
+<section class="flex flex-col md:flex-row items-center justify-center gap-4 mx-auto max-w-screen-full bg-green-800 bg-opacity-75">
+  <!-- Contenedor de imagen -->
+  <div class="flex justify-center items-center p-4 min-w-[500px] flex-grow">
+    <img
+      src="/public/images/pepino_man.png"
+      alt="Pepino Man"
+      class="object-contain max-h-[300px] md:max-h-[500px] w-auto"
+    />
+  </div>
+
+  <!-- Contenedor de texto -->
+  <div class="text-center p-4 flex items-center justify-center flex-grow">
+    <Slide client:only="react" interval={5000} className="text-white" />
+  </div>
+</section>

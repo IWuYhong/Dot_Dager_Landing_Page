@@ -1,3 +1,11 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "jsx": "react-jsx", // Configura React para JSX
+    "jsxImportSource": "react", // Indica que React es la fuente para JSX
+    "esModuleInterop": true, // Compatibilidad con módulos ES
+    "moduleResolution": "node", // Resolución de módulos
+    "strict": true, // Reglas estrictas de TypeScript
+    "target": "ESNext"
+  }
 }
