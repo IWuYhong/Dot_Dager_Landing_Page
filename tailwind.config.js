@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'pattern': "url('../public/images/pattern.webp')", // Ajusta la ruta
+        'pattern': "url('../public/images/pattern.webp')",
         'logo': "url('../public/logo.webp')", // Ajusta la ruta
       }
     },
