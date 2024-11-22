@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const frases = [
-  'Mi programa para cortar pepinos arrojó una excepción de \'PepinoDemasiadoCortoException\'. Parece que alguien se comió el final antes de que llegara a la línea de código.',
+  'Mi programa para cortar pepinos arrojó una excepción de \'Pepino Demasiado Corto Exception\'.',
   'Estoy creando una base de datos de pepinos. Ya tengo campos para el tamaño, el color y la variedad, pero aún no sé cómo representar el sabor en un tipo de dato primitivo.',
   'Dicen que ordenar una lista de objetos en Java es sencillo, pero intentar clasificar los pepinos de la abuela según su nivel de madurez es un problema NP-completo.',
 ];
@@ -24,7 +24,9 @@ const Slide = ({ interval = 5000, className = '' }: SlideProps) => {
 
   return (
     <div className={`text-center ${className}`}>
-      <span className="w-1/2 text-4xl font-bold text-gray-100">{frases[currentPhraseIndex]}</span>
+      <span className="w-full h-auto text-4xl md:text-1xl font-bold text-gray-100">
+        {frases[currentPhraseIndex]}
+      </span>
     </div>
   );
 };
